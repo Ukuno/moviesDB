@@ -1,0 +1,16 @@
+{
+    "name": "movies",
+    "version": "1.0.0",
+    "description": "this app is a search engine for movies",
+    "main": "app.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "ukuno",
+    "license": "ISC",
+    "dependencies": {
+        "ejs": "^2.5.7",
+        "express": "^4.16.3",
+        "moviedb": "^0.2.10"
+    }
+}
