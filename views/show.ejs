@@ -1,0 +1,18 @@
+<h1>THIS IS :</h1>
+
+<% result.results.forEach((arr) => { %>
+    <div style="padding: 20px;">
+        <img src="http://image.tmdb.org/t/p/w500<%= arr.poster_path %>" alt="" style="width:30px; float:left;">
+        <%= arr.title %>
+
+
+            <%= arr.overview %>
+
+
+                <h6>Release date :
+                    <%= arr.release_date %>
+                </h6>
+    </div>
+
+
+    <% }); %>

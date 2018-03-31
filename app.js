@@ -5,13 +5,17 @@ const express = require('express'),
 app.set("view engine", "ejs");
 
 app.get("/", (req, res) => {
-    movieDB.searchMovie({ query: 'lord of the rings' }, (err, result) => {
+
+});
+
+app.get("/search_result", (req, res) => {
+    movieDB.searchMovie({ query: 'the first lord of the rings' }, (err, result) => {
 
         // console.log(MOVIEDBAPIKEY);
         if (err || result.total_results == 0) {
-            res.send('Please try again');
+            res.render('404');
         } else {
-            res.render('index', { result: result });
+            res.render('show', { result: result });
         }
 
     });
